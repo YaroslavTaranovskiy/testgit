@@ -19,7 +19,55 @@
 </head>
 
 <body>
-    
+    <header>
+        <div class="container container-header">
+            <nav class="site-nav">
+                <a href="./index.html" class="logo">
+                    <svg width="199" height="50">
+                        <use href="./imeges/icon-sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+
+                <button type="button" class="sait-nav__btn js-open-menu">
+                    <svg width="20" height="12">
+                        <use href="./imeges/icon-sprite.svg#icon-mobile-menu-open"></use>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-menu container js-menu-container">
+        <button type="button" class="mobile-menu__close-btn js-close-menu" aria-controls="mobile-menu">
+            <svg width="14" height="14" aria-label="Переключатель мобильного меню">
+                <use class="" href="./imeges/icon-sprite.svg#icon-mobile-menu-close"></use>
+            </svg>
+        </button>
+        <button type="button" class="mobile-menu__buy-btn">
+            <span class="btn-text">Buy now</span>
+            <svg width="8" height="10">
+                <use class="" href="./imeges/icon-sprite.svg#icon-right-arrow"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link current" href="../index.html">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">About us</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">How it’s made?</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Our products</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/mob-menu.js"></script>
 </body>
 
 </html>
